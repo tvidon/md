@@ -1,0 +1,14 @@
+! run setxkbmap -variant intl first, xmodmap ./normal_xmodmap to load, use xev to find keycodes if these don't work 
+
+!vim
+keycode   9 = Caps_Lock NoSymbol Caps_Lock
+add Lock = Caps_Lock
+
+keycode  66 = Escape NoSymbol Escape
+clear Lock
+
+!arrow keys
+keycode  43 = h H h H Left Left h
+keycode  44 = j J j J Down Down j
+keycode  45 = k K k K Up Up oe
+keycode  46 = l L l L Right Right oslash
